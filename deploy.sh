@@ -9,7 +9,6 @@ source "${SCRIPT_DIR}/lib/rollout.sh"
 IMAGE="localhost:5000/rest-service:1.0"
 REGISTRY_PORT="5000"
 MINIKUBE_PROFILE="minikube"
-NODEPORT="30080"
 NAMESPACE="hello-world"
 
 echo "Running pre-flight checks..."

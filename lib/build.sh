@@ -7,7 +7,7 @@ build() {
   sleep 2
 
   echo "Building image..."
-  docker build --build-arg TARGETARCH="${TARGETARCH}" --tag "${IMAGE}" .
+  docker build --tag "${IMAGE}" .
 
   echo "Pushing image to local registry..."
   docker push "${IMAGE}"
