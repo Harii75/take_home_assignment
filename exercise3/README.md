@@ -52,15 +52,6 @@ Once complete:
 
 ```
 http://localhost:8080/hello-world
-```
-
-### Tear down
-
-```bash
-./deploy.sh --clean
-```
-
-Removes the Kubernetes resources and stops minikube.
 
 ---
 
