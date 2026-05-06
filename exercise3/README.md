@@ -89,25 +89,3 @@ exercise3/
     ├── rest_1.0_darwin_arm64
     └── rest_1.0_windows_arm64
 ```
-
----
-
-## Supported platforms
-
-| OS | Architecture | Supported |
-|----|-------------|-----------|
-| Linux | amd64 | ✅ |
-| Linux | arm64 | ✅ |
-| macOS | amd64 (Intel) | ✅ |
-| macOS | arm64 (Apple Silicon) | ✅ |
-| Windows | arm64 | ✅ manual install required |
-| Windows | amd64 | ❌ |
-
----
-
-## Notes
-
-- The image is pushed to minikube's internal registry (`localhost:5000`) — no DockerHub account or external registry needed.
-- The container runs as a non-root user.
-- The `hello-world` namespace is created automatically if it doesn't exist.
-- The port-forward (`localhost:8080`) runs in the background and will stop when the terminal is closed. Re-run `./deploy.sh` to restore it.
